@@ -112,7 +112,7 @@ namespace RedisClearApp
             }
             else
             {
-                SetTips("取消定清成功！");
+                SetTips("取消定清成功!");
                 timer1.Stop();
             }
         }
@@ -127,7 +127,7 @@ namespace RedisClearApp
             var data = await easy.GetListAsync<RedisInfo>();
             if (!data.Any())
             {
-                SetTips("请先配置Redis连接！",false);
+                SetTips("请先配置Redis连接!",false);
                 this.Text = $"RedisClear";
                 return;
             }
@@ -160,7 +160,7 @@ namespace RedisClearApp
             var data = await easy.GetListAsync<RedisInfo>();
             if (!data.Any())
             {
-                SetTips("请先配置Redis连接！", false);
+                SetTips("请先配置Redis连接!", false);
                 this.Text = $"RedisClear";
                 return;
             }
@@ -175,7 +175,8 @@ namespace RedisClearApp
                     err++;
                 }
             }
-            SetTips(err == 0 ? "立即清空:全部清空成功！" : "立即清空:部分清空成功！", err == 0);
+            var now = DateTime.Now.ToString("HH:mm:ss");
+            SetTips(err == 0 ? $"全部立清成功(Now:{now})" : $"部分立清成功(Now:{now})", err == 0);
             this.UISafeInvoke(() =>
             {
                 //更新到标题

@@ -77,20 +77,20 @@ namespace RedisClearApp
                 DataList = list,
                 HeadtextList = new List<(System.Linq.Expressions.Expression<Func<RedisInfo, object>> fields, string name, int width)>
                 {
-                    (x=> x.Ip,"IP地址",120),
-                    (x=> x.Port,"端口",60),
-                    (x=> x.Remark,"备注",130),
+                    (x=> x.Ip,"IP地址",130),
+                    (x=> x.Port,"端口",70),
+                    (x=> x.Remark,"备注",160),
                 },
                 ButtonList = new List<(string ButtonName, string titile, int Width)>
                 {
-                    ("清空","操作",50),
-                    ("删除","操作",50),
+                    ("清空","操作1",60),
+                    ("删除","操作2",60),
                 },
                 RowAction = (info, cell) =>
                 {
                     var style = cell.DefaultCellStyle;
                     style.ForeColor = Color.Red;
-                    style.Font = new Font("宋体", 8f, FontStyle.Regular);
+                    style.Font = new Font("宋体", 10f, FontStyle.Regular);
                     if (info.Issucess == 1)
                     {
                         style.ForeColor = Color.FromArgb(0, 170, 17);

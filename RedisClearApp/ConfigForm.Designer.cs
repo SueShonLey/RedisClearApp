@@ -62,14 +62,14 @@
             groupBox1.Controls.Add(dataGridView1);
             groupBox1.Location = new Point(8, 83);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(480, 357);
+            groupBox1.Size = new Size(567, 357);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "连接字符串管理";
             // 
             // button4
             // 
-            button4.Location = new Point(370, 26);
+            button4.Location = new Point(457, 26);
             button4.Name = "button4";
             button4.Size = new Size(104, 37);
             button4.TabIndex = 6;
@@ -79,7 +79,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(226, 26);
+            button3.Location = new Point(285, 26);
             button3.Name = "button3";
             button3.Size = new Size(60, 37);
             button3.TabIndex = 5;
@@ -89,7 +89,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(297, 26);
+            button2.Location = new Point(370, 26);
             button2.Name = "button2";
             button2.Size = new Size(62, 37);
             button2.TabIndex = 4;
@@ -101,7 +101,7 @@
             // 
             textBox1.Location = new Point(62, 30);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(158, 27);
+            textBox1.Size = new Size(207, 27);
             textBox1.TabIndex = 2;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -121,13 +121,13 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(465, 281);
+            dataGridView1.Size = new Size(552, 281);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button1
             // 
-            button1.Location = new Point(369, 26);
+            button1.Location = new Point(458, 26);
             button1.Name = "button1";
             button1.Size = new Size(102, 38);
             button1.TabIndex = 8;
@@ -147,7 +147,7 @@
             groupBox2.Controls.Add(label7);
             groupBox2.Location = new Point(9, 1);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(479, 81);
+            groupBox2.Size = new Size(566, 81);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "定时管理";
@@ -155,7 +155,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(334, 35);
+            label4.Location = new Point(407, 35);
             label4.Name = "label4";
             label4.Size = new Size(24, 20);
             label4.TabIndex = 7;
@@ -163,7 +163,7 @@
             // 
             // numericUpDown4
             // 
-            numericUpDown4.Location = new Point(270, 31);
+            numericUpDown4.Location = new Point(343, 31);
             numericUpDown4.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             numericUpDown4.Name = "numericUpDown4";
             numericUpDown4.Size = new Size(59, 27);
@@ -172,7 +172,7 @@
             // 
             // numericUpDown2
             // 
-            numericUpDown2.Location = new Point(65, 31);
+            numericUpDown2.Location = new Point(68, 31);
             numericUpDown2.Name = "numericUpDown2";
             numericUpDown2.Size = new Size(59, 27);
             numericUpDown2.TabIndex = 2;
@@ -180,7 +180,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(230, 35);
+            label3.Location = new Point(265, 34);
             label3.Name = "label3";
             label3.Size = new Size(24, 20);
             label3.TabIndex = 5;
@@ -189,7 +189,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(129, 34);
+            label2.Location = new Point(132, 34);
             label2.Name = "label2";
             label2.Size = new Size(24, 20);
             label2.TabIndex = 3;
@@ -197,7 +197,7 @@
             // 
             // numericUpDown3
             // 
-            numericUpDown3.Location = new Point(167, 31);
+            numericUpDown3.Location = new Point(202, 30);
             numericUpDown3.Name = "numericUpDown3";
             numericUpDown3.Size = new Size(59, 27);
             numericUpDown3.TabIndex = 4;
@@ -215,7 +215,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(498, 444);
+            ClientSize = new Size(581, 444);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             MaximizeBox = false;
