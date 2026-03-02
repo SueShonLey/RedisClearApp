@@ -1,4 +1,5 @@
-﻿using StackExchange.Redis;
+﻿using RedisClearApp.EasyORM;
+using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -45,13 +46,15 @@ namespace RedisClearApp.Helper
                     return false;
                 }
 
-                // 等待连接任务完成并获取连接实例
-                var redis = await connectTask;
-                var db = redis.GetDatabase();
-
-                // 使用 Ping 命令检测 Redis 是否可用
-                var pingResult = await db.PingAsync();
-                return pingResult.TotalMilliseconds > 0; // 如果 Ping 返回有效结果
+                var db = (await ConnectionMultiplexer.ConnectAsync(redisConnectionString))?.GetDatabase();// 获取数据库实例
+                string testKey = Guid.NewGuid().ToString();
+                if(db == null)
+                {
+                    return false;
+                }
+                await db.StringSetAsync(testKey, testKey); 
+                await db.KeyDeleteAsync(testKey);         
+                return true;
             }
             catch (Exception)
             {
